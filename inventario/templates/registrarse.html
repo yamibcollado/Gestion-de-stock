@@ -1,6 +1,8 @@
 <h1> Signup (registro) </h1>
 
-<form action="/signup/" method="POST">
+{{error}}
+
+<form action="/registro/" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
 

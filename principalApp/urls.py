@@ -20,7 +20,8 @@ from inventario import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.registrarse),
-    path('signup/', views.registrarse)
+    path('', views.home, name='home'),
+    path('registro/', views.registrarse, name='registro'),
+    path('productos/', views.productos, name='productos')
     
 ]
